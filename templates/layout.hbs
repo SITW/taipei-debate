@@ -60,7 +60,7 @@
 
             <div class="intro">
               {{#each intro}}
-              <div class="block">
+              <div class="block" id="{{anchor}}">
                 {{who}}: {{content}}
               </div>
               {{/each}}
@@ -68,8 +68,8 @@
 
             <div class="qanda">
               {{#each qanda}}
-              <div class="block">
-                ask: {{q.who}}: {{q.cotent}}
+              <div class="block" id="{{anchor}}">
+                ask: {{q.who}}: {{q.content}}
                 ans: kp: {{#each ans.kp}}<p>{{ this }}</p>{{/each}}
                 sean: {{#each ans.sean}}<p>{{ this }}</p>{{/each}}
               </div>
@@ -78,8 +78,8 @@
             
             <div class="cross">
                 {{#each cross}}
-                <div>
-                    {{#each this}}
+                <div id="{{anchor}}">
+                    {{#each conversation}}
                     <div>
                       {{who}}: {{#each content}}<p>{{ this }}</p>{{/each}}
                     </div>
@@ -88,9 +88,9 @@
                 {{/each}}
             </div>
 
-            <div class="conclusion">
+            <div class="conclusion"  id="conclusion">
               {{#each conclusion}}
-              <div class="block">
+              <div class="block"  id="{{anchor}}">
                 {{who}}: {{#each content}}<p>{{ this }}</p>{{/each}}
               </div>
               {{/each}}

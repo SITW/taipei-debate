@@ -15,7 +15,7 @@ module.exports= {
         "og_description": "This is a one page webpage generater",
         "og_image": "./image/header-logo-xs.png",
         "charset": "UTF-8",
-        "author": "chilijung",
+        "author": "wwwy3y3",
         "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
         "shortcut_icon": "https://dl.dropboxusercontent.com/u/28663689/dg/favicon%20%281%29.ico",
 
