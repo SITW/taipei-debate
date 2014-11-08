@@ -8,9 +8,9 @@ module.exports= {
     // necessary, values render into handlbars
     "basic": {
         // the objects are optional, according to your layout (render by handlebars).
-        "title": "Docgr",
-        "og_title": "Docgr",
-        "og_site_name": "Docgr - a one page webpage generater",
+        "title": "台北市長辯論",
+        "og_title": "台北市長辯論",
+        "og_site_name": "台北市長辯論",
         "og_url": "docgr.datagarage.io",
         "og_description": "This is a one page webpage generater",
         "og_image": "./image/header-logo-xs.png",

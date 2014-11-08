@@ -1,0 +1,175 @@
+
+@font-face {
+  font-family: "Lato-Light";
+  src: url(./fonts/Lato-Light.ttf);
+}
+.centered {
+  float: none;
+  margin: 0 auto;
+}
+.center {
+  text-align: center;
+}
+/***color***/
+#header {
+  margin-top: 0;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-family: "Lato-Light";
+  background-color: #fff;
+}
+#header .logo img {
+  width: 150px;
+}
+#navigation .wrapper {
+  padding: 20px 65px;
+  margin: 0 auto;
+}
+#navigation ul {
+  position: absolute;
+  right: 4em;
+  top: 1.3em;
+  vertical-align: middle;
+  font-size: 1.5em;
+  display: inline;
+}
+#navigation ul li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 1em;
+}
+#navigation ul li span {
+  padding: 0 5px;
+}
+#navigation ul li a {
+  color: #f80041;
+  display: inline-block;
+}
+#navigation ul li a:hover {
+  border-bottom: #f80041 3px solid;
+  text-decoration: none;
+}
+table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+th {
+  padding: 2% 6% 2% 0;
+}
+td {
+  border-style: dotted;
+  border-width: 0px;
+  border-color: #ddd;
+  min-width: 100px;
+  padding: 2px;
+}
+tr {
+  text-align: left;
+  border: 1px black solid;
+  padding: 3px;
+}
+tr:hover {
+  background-color: #f0efb6;
+}
+td:hover {
+  background-color: #dfdd61;
+  cursor: pointer;
+}
+tr:nth-child(odd) {
+  color: green;
+}
+tr:nth-child(even) {
+  background-color: #EEE;
+}
+main {
+  font-family: "Lato-Light";
+  margin-top: 3em;
+  margin-left: 28em;
+  width: 51em;
+}
+main .head {
+  font-size: 50px;
+  font-family: "Lato-Medium";
+}
+main .head:before {
+  content: " ";
+  width: 31.8px;
+  height: 37.2px;
+  background-size: 31.8px 37.2px;
+  position: absolute;
+  margin-left: -37px;
+  margin-top: 13px;
+}
+main .block {
+  margin-bottom: 70px;
+}
+main .block .title {
+  font-family: "Lato-Medium";
+  padding-left: 17px;
+  margin-left: -30px;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+main .block .title:target {
+  margin-top: 50px;
+  border-left: 5px #f80041 solid;
+}
+main .block .intro {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+main .md {
+  margin-left: 10px;
+}
+main .md h2 {
+  margin-left: -20px;
+}
+main .md p {
+  font-size: 17px;
+}
+.sidebar {
+  margin-left: 42px;
+  margin-top: 20px;
+  float: left;
+  display: inline-block;
+  font-family: "Lato-Light";
+  text-decoration: none;
+}
+.sidebar ul {
+  margin-bottom: 21px;
+}
+.sidebar li.title {
+  font-size: 18px;
+  font-family: "Lato-Medium";
+  padding-bottom: 3px;
+}
+.sidebar li.title .small {
+  font-size: 15px;
+  padding-left: 5px;
+}
+.sidebar li {
+  list-style-type: none;
+  font-size: 16px;
+}
+.sidebar li a {
+  color: black;
+}
+.sidebar li a:hover {
+  text-decoration: none;
+  color: #f80041;
+}
+.sidebar li:not(.title) {
+  margin-left: 7px;
+  padding-top: 3px;
+}
+footer {
+  margin-top: 150px;
+  border-bottom: 4px solid #f80041;
+}
+footer .copyright {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-family: "Lato-Light";
+}
