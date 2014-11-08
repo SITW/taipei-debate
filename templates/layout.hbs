@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    {{title}}
+  </title>
+  <head>
+    <meta property="og:title" content="{{og_title}}">
+    <meta property="og:site_name" content="{{og_site_name}}">
+    <meta property="og:url" content="{{og_url}}">
+    <meta property="og:description" content="{{og_description}}">
+    <meta property="og:image" content="{{og_image}}">
+    <meta name="author" content="{{og_author}}">
+    <meta charset="{{charset}}">
+    <meta name="viewport" content="{{viewport}}">
+    <link rel="shortcut icon" href="{{shortcut_icon}}">
+    {{#each stylesheets}}
+    <link rel="stylesheet" href="{{this}}">
+    {{/each}}
+    {{#each scripts}}
+    <script src="{{this}}"></script>
+    {{/each}}
+  </head>
+  <body>
+    <div class="row">
+      <div class="usage-page">
+        <div class="wrapper">
+          <header id="header">
+            <nav id="navigation" role="navigation">
+              <div class="wrapper"><a href="./" class="logo"><img src="{{logo_img}}"></a>
+                <ul>
+                  <li><a href="{{github_link}}" target="_blank">Github</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <div class="sidebar">
+            {{#each nav}}
+              <ul>
+                <li class="title">
+                  <a href="#{{anchor}}">
+                    {{title}}
+                  </a>
+                </li>
+
+                {{#each sub}}
+                  <li>
+                    <a href="#{{anchor}}">
+                      {{title}}
+                    </a>
+                  </li>
+                {{/each}}
+              </ul>
+            {{/each}}
+          </div>
+          <main>
+            <div class="block" id="start">
+                {{start}}
+            </div>
+
+
+            <div class="intro">
+              {{#each intro}}
+              <div class="block">
+                {{who}}: {{content}}
+              </div>
+              {{/each}}
+            </div>
+
+            <div class="qanda">
+              {{#each qanda}}
+              <div class="block">
+                ask: {{q.who}}: {{q.cotent}}
+                ans: kp: {{#each ans.kp}}<p>{{ this }}</p>{{/each}}
+                sean: {{#each ans.sean}}<p>{{ this }}</p>{{/each}}
+              </div>
+              {{/each}}
+            </div>
+            
+            <div class="cross">
+                {{#each cross}}
+                <div>
+                    {{#each this}}
+                    <div>
+                      {{who}}: {{#each content}}<p>{{ this }}</p>{{/each}}
+                    </div>
+                    {{/each}}
+                </div>
+                {{/each}}
+            </div>
+
+            <div class="conclusion">
+              {{#each conclusion}}
+              <div class="block">
+                {{who}}: {{#each content}}<p>{{ this }}</p>{{/each}}
+              </div>
+              {{/each}}
+            </div>
+
+          </main>
+        </div>
+        <footer>
+          <div class="copyright">2014 Data Garage, this document is generate by Docgr!</div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      var offset = $(".sidebar").offset();
+      var topPadding = 50;
+      $(window).scroll(function() {
+          if ($(window).scrollTop() > offset.top) {
+              $(".sidebar").css("margin-top", $(window).scrollTop() - offset.top + topPadding);
+          } else {
+              $(".sidebar").css("margin-top", 20);
+          };
+      });
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
