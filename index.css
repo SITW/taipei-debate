@@ -137,17 +137,20 @@ main .md p {
   margin-bottom: 21px; }
 
 .sidebar li.title {
-  font-size: 18px;
+  font-weight: 900;
+  font-size: 15px;
   font-family: "Lato-Medium";
   padding-bottom: 3px; }
+
+li.nav-sub {
+  font-size: 13px; }
 
 .sidebar li.title .small {
   font-size: 15px;
   padding-left: 5px; }
 
 .sidebar li {
-  list-style-type: none;
-  font-size: 16px; }
+  list-style-type: none; }
 
 .sidebar li a {
   color: black; }
@@ -169,5 +172,8 @@ footer .copyright {
   padding-bottom: 10px;
   font-size: 17px;
   font-family: "Lato-Light"; }
+
+p {
+  font-size: 1.3em; }
 
 /*# sourceMappingURL=index.css.map */
