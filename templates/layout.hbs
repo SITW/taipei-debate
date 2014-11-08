@@ -26,10 +26,8 @@
         <div class="wrapper">
           <header id="header">
             <nav id="navigation" role="navigation">
-              <div class="wrapper"><a href="./" class="logo"><img src="{{logo_img}}"></a>
-                <ul>
-                  <li><a href="{{github_link}}" target="_blank">Github</a></li>
-                </ul>
+              <div class="wrapper">
+                <a href="./" class="logo"><h3>{{title}}</h3></a>
               </div>
             </nav>
           </header>
@@ -54,6 +52,7 @@
           </div>
           <main>
             <div class="block" id="start">
+                <h3 class="section-title">主持人開場</h3>
                 {{start}}
             </div>
 
@@ -61,27 +60,33 @@
             <div class="intro">
               {{#each intro}}
               <div class="block" id="{{anchor}}">
-                {{who}}: {{content}}
+                <h3 class="section-title">{{who}}申論</h3>
+                {{content}}
               </div>
               {{/each}}
             </div>
 
             <div class="qanda">
+              <h3 class="section-title">公民團體提問</h3>
               {{#each qanda}}
               <div class="block" id="{{anchor}}">
-                ask: {{q.who}}: {{q.content}}
-                ans: kp: {{#each ans.kp}}<p>{{ this }}</p>{{/each}}
-                sean: {{#each ans.sean}}<p>{{ this }}</p>{{/each}}
+                <h4 class="section-subtitl">{{q.who}}</h4>{{q.content}}
+                <h4 class="section-answer">柯文哲</h4>
+                {{#each ans.kp}}<p>{{ this }}</p>{{/each}}
+                <h4 class="section-answer">連勝文</h4>
+                {{#each ans.sean}}<p>{{ this }}</p>{{/each}}
               </div>
               {{/each}}
             </div>
-            
+
             <div class="cross">
+                <h3 class="section-title">交叉詰問</h3>
                 {{#each cross}}
                 <div id="{{anchor}}">
                     {{#each conversation}}
                     <div>
-                      {{who}}: {{#each content}}<p>{{ this }}</p>{{/each}}
+                      <h4 class="section-answer">{{who}}</h4>
+                      {{#each content}}<p>{{ this }}</p>{{/each}}
                     </div>
                     {{/each}}
                 </div>
@@ -89,9 +94,11 @@
             </div>
 
             <div class="conclusion"  id="conclusion">
+              <h3 class="section-title">結論</h3>
               {{#each conclusion}}
               <div class="block"  id="{{anchor}}">
-                {{who}}: {{#each content}}<p>{{ this }}</p>{{/each}}
+                <h4 class="section-answer">{{who}}</h4>
+                {{#each content}}<p>{{ this }}</p>{{/each}}
               </div>
               {{/each}}
             </div>
