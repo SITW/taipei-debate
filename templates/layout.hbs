@@ -57,6 +57,11 @@
                     <div class="intro">
                         {{#each intro}}
                         <div class="block" id="{{anchor}}">
+                            {{#if id}}
+                                <img src="/image/kp.png" alt="" class="avatar">
+                            {{else}}
+                                <img src="/image/sean.jpg" alt="" class="avatar">
+                            {{/if}}
                             <h3 class="section-title">{{who}}申論</h3>
                             <p>{{content}}</p>
                         </div>
@@ -72,8 +77,10 @@
                                     <p class="q-tag">Q:</p> <p>{{q.content}}</p>
                                     <hr>
                                     <p class="q-tag">A:</p>
+                                    <img src="/image/kp.png" alt="" class="avatar">
                                     <h4 class="section-answer">柯文哲 回答</h4>
                                     {{#each ans.kp}}<p>{{ this }}</p>{{/each}}
+                                    <img src="/image/sean.jpg" alt="" class="avatar">
                                     <h4 class="section-answer">連勝文 回答</h4>
                                     {{#each ans.sean}}<p>{{ this }}</p>{{/each}}
                                 </div>
@@ -87,6 +94,11 @@
                                 <h3 class="section-title">{{title}}</h3>
                                 {{#each conversation}}
                                 <div>
+                                    {{#if id}}
+                                        <img src="/image/kp.png" alt="" class="avatar">
+                                    {{else}}
+                                        <img src="/image/sean.jpg" alt="" class="avatar">
+                                    {{/if}}
                                     <h4 class="section-answer">{{who}}</h4>
                                     {{#each content}}<p>{{ this }}</p>{{/each}}
                                 </div>
@@ -98,6 +110,11 @@
                         <h3 class="section-title">結論</h3>
                         {{#each conclusion}}
                         <div class="block"  id="{{anchor}}">
+                            {{#if id}}
+                                <img src="/image/kp.png" alt="" class="avatar">
+                            {{else}}
+                                <img src="/image/sean.jpg" alt="" class="avatar">
+                            {{/if}}
                             <h4 class="section-answer">{{who}}</h4>
                             {{#each content}}<p>{{ this }}</p>{{/each}}
                         </div>
@@ -122,5 +139,6 @@
         });
         </script>
         <script>hljs.initHighlightingOnLoad();</script>
+
     </body>
 </html>
