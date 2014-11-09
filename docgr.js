@@ -28,7 +28,7 @@ module.exports= {
             "./index.css"
         ],
 
-        "logo_img": "./image/header-logo-xs.png",
+        "logo_img": "./cover.jpg",
 
         "github_link": "https://github.com/DataGarage/open-data-license",
 
