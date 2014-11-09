@@ -57,6 +57,11 @@
                     <div class="intro">
                         {{#each intro}}
                         <div class="block" id="{{anchor}}">
+                            {{#if id}}
+                                <img src="http://i.imgur.com/M78C4Kb.png" alt="" class="avatar">
+                            {{else}}
+                                <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
+                            {{/if}}
                             <h3 class="section-title">{{who}}申論</h3>
                             <p>{{content}}</p>
                             <a href="http://youtu.be/H98-QXZppMI?t={{youtube}}">youtube</a>
@@ -74,8 +79,10 @@
                                     <a href="http://youtu.be/H98-QXZppMI?t={{q.youtube}}">youtube</a>
                                     <hr>
                                     <p class="q-tag">A:</p>
+                                    <img src="http://i.imgur.com/M78C4Kb.png" alt="" class="avatar">
                                     <h4 class="section-answer">柯文哲 回答</h4>
                                     {{#each ans.kp.lines}}<p>{{ this }}</p>{{/each}}
+                                    <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
                                     <a href="http://youtu.be/H98-QXZppMI?t={{ans.kp.youtube}}">youtube</a>
                                     <h4 class="section-answer">連勝文 回答</h4>
                                     {{#each ans.sean.lines}}<p>{{ this }}</p>{{/each}}
@@ -91,6 +98,11 @@
                                 <h3 class="section-title">{{title}}</h3>
                                 {{#each conversation}}
                                 <div>
+                                    {{#if id}}
+                                        <img src="http://i.imgur.com/M78C4Kb.png" alt="" class="avatar">
+                                    {{else}}
+                                        <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
+                                    {{/if}}
                                     <h4 class="section-answer">{{who}}</h4>
                                     {{#each content}}<p>{{ this }}</p>{{/each}}
                                     <a href="http://youtu.be/H98-QXZppMI?t={{youtube}}">youtube</a>
@@ -103,6 +115,11 @@
                         <h3 class="section-title">結論</h3>
                         {{#each conclusion}}
                         <div class="block"  id="{{anchor}}">
+                            {{#if id}}
+                                <img src="http://i.imgur.com/M78C4Kb.png" alt="" class="avatar">
+                            {{else}}
+                                <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
+                            {{/if}}
                             <h4 class="section-answer">{{who}}</h4>
                             {{#each content}}<p>{{ this }}</p>{{/each}}
                             <a href="http://youtu.be/H98-QXZppMI?t={{youtube}}">youtube</a>
@@ -128,5 +145,6 @@
         });
         </script>
         <script>hljs.initHighlightingOnLoad();</script>
+
     </body>
 </html>
