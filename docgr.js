@@ -39,7 +39,7 @@ module.exports= {
             },
             {
                 "title": "柯文哲申論",
-                "anchor": "kp-intro"
+                "anchor": "kp-intro",
             },
 
             {
@@ -53,28 +53,27 @@ module.exports= {
                 "sub": [
                     {
                         "title": "台灣勞工陣線協會副理事長：廖慧芳",
-                        "anchor": "liou"
-
+                        "anchor": "liou",
                     },
                     {
                         "title": "社團法人台灣競爭力論壇理事長：彭錦鵬",
-                        "anchor": "pang-ching"
+                        "anchor": "pang-ching",
                     },
                     {
                         "title": "台北市青年創業會理事長：江梅提",
-                        "anchor": "chiang"
+                        "anchor": "chiang",
                     },
                     {
                         "title": "台灣防暴聯盟：張錦麗",
-                        "anchor": "chang"
+                        "anchor": "chang",
                     },
                     {
                         "title": "主婦聯盟環境保護基金會：賴曉芬",
-                        "anchor": "lai"
+                        "anchor": "lai",
                     },
                     {
                         "title": "都改組織：彭陽凱",
-                        "anchor": "pang-yang"
+                        "anchor": "pang-yang",
                     }
                 ]
             },
