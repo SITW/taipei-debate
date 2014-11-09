@@ -207,3 +207,9 @@ ul {
 .youtube-img {
   margin-left: 10px;
 }
+
+.row {
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+}

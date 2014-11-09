@@ -198,4 +198,8 @@ ul {
 .youtube-img {
   margin-left: 10px; }
 
+@media (max-width: 768px) {
+  .row {
+    margin: 0; } }
+
 /*# sourceMappingURL=index.css.map */
