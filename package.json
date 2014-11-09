@@ -1,0 +1,25 @@
+{
+  "name": "taipei-debate",
+  "version": "0.0.1",
+  "description": "taipei-debate",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SITW/taipei-debate"
+  },
+  "keywords": [
+    "debate"
+  ],
+  "author": "wwwy3y3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SITW/taipei-debate/issues"
+  },
+
+  "dependencies": {
+    "docgr": "latest"
+  }
+}
