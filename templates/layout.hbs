@@ -62,9 +62,8 @@
                             {{else}}
                                 <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
                             {{/if}}
-                            <h3 class="section-title">{{who}}申論</h3>
+                            <h3 class="section-title">{{who}}申論<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h3>
                             <p>{{content}}</p>
-                            <a href="http://youtu.be/H98-QXZppMI?t={{youtube}}">youtube</a>
                         </div>
                         {{/each}}
                     </div>
@@ -74,19 +73,16 @@
                         {{#each qanda}}
                             <li style="list-style-type: decimal;">
                                 <div class="block" id="{{anchor}}">
-                                    <h4 class="section-subtitle">{{q.who}}</h4>
+                                    <h4 class="section-subtitle">{{q.who}}<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{q.youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h4>
                                     <p class="q-tag">Q:</p> <p>{{q.content}}</p>
-                                    <a href="http://youtu.be/H98-QXZppMI?t={{q.youtube}}">youtube</a>
                                     <hr>
                                     <p class="q-tag">A:</p>
                                     <img src="http://i.imgur.com/M78C4Kb.png" alt="" class="avatar">
-                                    <h4 class="section-answer">柯文哲 回答</h4>
+                                    <h4 class="section-answer">柯文哲 回答<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{ans.kp.youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h4>
                                     {{#each ans.kp.lines}}<p>{{ this }}</p>{{/each}}
                                     <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
-                                    <a href="http://youtu.be/H98-QXZppMI?t={{ans.kp.youtube}}">youtube</a>
-                                    <h4 class="section-answer">連勝文 回答</h4>
+                                    <h4 class="section-answer">連勝文 回答<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{ans.sean.youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h4>
                                     {{#each ans.sean.lines}}<p>{{ this }}</p>{{/each}}
-                                    <a href="http://youtu.be/H98-QXZppMI?t={{ans.sean.youtube}}">youtube</a>
                                 </div>
                             </li>
                         {{/each}}
@@ -103,9 +99,8 @@
                                     {{else}}
                                         <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
                                     {{/if}}
-                                    <h4 class="section-answer">{{who}}</h4>
+                                    <h4 class="section-answer">{{who}}<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h4>
                                     {{#each content}}<p>{{ this }}</p>{{/each}}
-                                    <a href="http://youtu.be/H98-QXZppMI?t={{youtube}}">youtube</a>
                                 </div>
                                 {{/each}}
                             </div>
@@ -120,9 +115,8 @@
                             {{else}}
                                 <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
                             {{/if}}
-                            <h4 class="section-answer">{{who}}</h4>
+                            <h4 class="section-answer">{{who}}<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h4>
                             {{#each content}}<p>{{ this }}</p>{{/each}}
-                            <a href="http://youtu.be/H98-QXZppMI?t={{youtube}}">youtube</a>
                         </div>
                         {{/each}}
                     </div>
