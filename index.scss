@@ -85,8 +85,10 @@ tr:nth-child(even) {
 main {
   font-family: "Lato-Light";
   margin-top: 3em;
-  margin-left: 31em;
-  width: 51em;
+  @media (min-width: 1000px) {
+    margin-left: 31em;
+    width: 51em;
+  }
 }
 main .head {
   font-size: 50px;
