@@ -23,8 +23,6 @@ module.exports= {
             "https://code.jquery.com/jquery-1.11.0.min.js"
         ],
 
-        "fbjs": "./fb.js",
-
         "stylesheets": [
             "http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css",
             "./index.css"

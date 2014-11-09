@@ -131,7 +131,6 @@
                 </footer>
             </div>
         </div>
-        <script src="{{fbjs}}"></script>
         <script>
         var offset = $(".sidebar").offset();
         var topPadding = 50;
@@ -143,18 +142,6 @@
         };
         });
 
-
-        //fbshare
-        $(".fb-share").click(function () {
-            var target = $( event.target );
-            FB.ui({
-              method: 'share',
-              href: 'http://sitw.tw/taipei-debate/'+target.parent().attr('id'),
-            }, function(response){
-
-            });
-        })
-        
         </script>
         <script>hljs.initHighlightingOnLoad();</script>
 
