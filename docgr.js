@@ -11,7 +11,7 @@ module.exports= {
         "title": "台北市長辯論",
         "og_title": "台北市長辯論",
         "og_site_name": "台北市長辯論",
-        "og_url": "sitw.tw/taipei-debate",
+        "og_url": "http://sitw.tw/taipei-debate/",
         "og_description": "台北市長辯論 逐字稿整理",
         "og_image": "http://sitw.tw/taipei-debate/cover.jpg",
         "charset": "UTF-8",
