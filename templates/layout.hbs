@@ -64,16 +64,22 @@
                     </div>
                     <div class="qanda" id="qanda">
                         <h3 class="section-title">公民團體提問</h3>
+                        <ul>
                         {{#each qanda}}
-                        <div class="block" id="{{anchor}}">
-                            <h4 class="section-subtitle">{{q.who}}</h4>
-                            <p>{{q.content}}</p>
-                            <h4 class="section-answer">柯文哲 回答</h4>
-                            {{#each ans.kp}}<p>{{ this }}</p>{{/each}}
-                            <h4 class="section-answer">連勝文 回答</h4>
-                            {{#each ans.sean}}<p>{{ this }}</p>{{/each}}
-                        </div>
+                            <li style="list-style-type: decimal;">
+                                <div class="block" id="{{anchor}}">
+                                    <h4 class="section-subtitle">{{q.who}}</h4>
+                                    <p class="q-tag">Q:</p> <p>{{q.content}}</p>
+                                    <hr>
+                                    <p class="q-tag">A:</p>
+                                    <h4 class="section-answer">柯文哲 回答</h4>
+                                    {{#each ans.kp}}<p>{{ this }}</p>{{/each}}
+                                    <h4 class="section-answer">連勝文 回答</h4>
+                                    {{#each ans.sean}}<p>{{ this }}</p>{{/each}}
+                                </div>
+                            </li>
                         {{/each}}
+                        </ul>
                     </div>
                     <div class="cross">
                         {{#each cross}}

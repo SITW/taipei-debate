@@ -181,6 +181,19 @@ footer .copyright {
 p {
     font-size: 1.3em;
 }
-// .logo {
-//     font-size: 2em;
-// }
+.section-title {
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.q-tag {
+  color: green;
+  margin-left: -3%;
+}
+
+.section-answer ~ p {
+  margin-left: 3%;
+}
+
+ul {
+  padding: 0 20px;
+}
