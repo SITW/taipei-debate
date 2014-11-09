@@ -11,9 +11,9 @@ module.exports= {
         "title": "台北市長辯論",
         "og_title": "台北市長辯論",
         "og_site_name": "台北市長辯論",
-        "og_url": "docgr.datagarage.io",
+        "og_url": "sitw.tw/taipei-debate",
         "og_description": "台北市長辯論 逐字稿整理",
-        "og_image": "./cover.jpg",
+        "og_image": "http://sitw.tw/taipei-debate/cover.jpg",
         "charset": "UTF-8",
         "author": "wwwy3y3",
         "viewport": "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no",
@@ -28,7 +28,7 @@ module.exports= {
             "./index.css"
         ],
 
-        "logo_img": "./cover.jpg",
+        "logo_img": "http://sitw.tw/taipei-debate/cover.jpg",
 
         "github_link": "https://github.com/DataGarage/open-data-license",
 
