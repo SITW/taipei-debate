@@ -64,6 +64,7 @@
                             {{/if}}
                             <h3 class="section-title">{{who}}申論<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h3>
                             <p>{{content}}</p>
+                            <button class="fb-share">fb share</button>
                         </div>
                         {{/each}}
                     </div>
@@ -83,6 +84,7 @@
                                     <img src="http://i.imgur.com/FS0Zrss.jpg" alt="" class="avatar">
                                     <h4 class="section-answer">連勝文 回答<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{ans.sean.youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h4>
                                     {{#each ans.sean.lines}}<p>{{ this }}</p>{{/each}}
+                                    <button class="fb-share">fb share</button>
                                 </div>
                             </li>
                         {{/each}}
@@ -103,6 +105,7 @@
                                     {{#each content}}<p>{{ this }}</p>{{/each}}
                                 </div>
                                 {{/each}}
+                                <button class="fb-share">fb share</button>
                             </div>
                         {{/each}}
                     </div>
@@ -117,6 +120,7 @@
                             {{/if}}
                             <h4 class="section-answer">{{who}}<a target="_blank" href="http://youtu.be/H98-QXZppMI?t={{youtube}}"><img src="http://media.ruralradio.co/ktic/images/youtube_icon.png" alt="icon" class="youtube-img"></a></h4>
                             {{#each content}}<p>{{ this }}</p>{{/each}}
+                            <button class="fb-share">fb share</button>
                         </div>
                         {{/each}}
                     </div>
@@ -127,7 +131,7 @@
                 </footer>
             </div>
         </div>
-        {{fbjs}}
+        <script src="{{fbjs}}"></script>
         <script>
         var offset = $(".sidebar").offset();
         var topPadding = 50;
@@ -138,6 +142,19 @@
         $(".sidebar").css("margin-top", 20);
         };
         });
+
+
+        //fbshare
+        $(".fb-share").click(function () {
+            var target = $( event.target );
+            FB.ui({
+              method: 'share',
+              href: 'http://sitw.tw/taipei-debate/'+target.parent().attr('id'),
+            }, function(response){
+
+            });
+        })
+        
         </script>
         <script>hljs.initHighlightingOnLoad();</script>
 
